@@ -1,4 +1,6 @@
 import React from "react";
+
+
 // import "./style.css";
 
 // The ...props means, spread all of the passed props onto this element
@@ -10,7 +12,7 @@ function Result(props) {
       <h3>{props.book.volumeInfo.authors.join(", ")}</h3>
       <img src={props.book.volumeInfo.imageLinks.thumbnail}></img>
       <h3>{props.book.volumeInfo.description}</h3>
-      <a href={props.book.volumeInfo.infoLink}></a>
+      <a href={props.book.volumeInfo.infoLink}>Book Link</a>
   </div>
   );
 }

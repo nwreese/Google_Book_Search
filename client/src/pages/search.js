@@ -7,6 +7,8 @@ import { Col, Row, Container } from "../components/Grid";
 import { List, ListItem } from "../components/List";
 import { Input, TextArea, FormBtn } from "../components/Form";
 import Result from "../components/Result";
+import Nav from "../components/Nav";
+import ParticlesBg from 'particles-bg';
 
 function Search () {
     const  [keyword, setKeyword] = useState("")
@@ -26,7 +28,9 @@ function Search () {
         })
     }
     return (
+        <>
         <div>
+            <Nav />
             <form onSubmit={(event) => {handleSearch(event)}}>
             <input onChange={(event) => {handleInputChange(event)}} type="text"/>
             <button type="submit">Search</button>
@@ -42,7 +46,8 @@ function Search () {
                 </div>
             </div>
         </div>
-
+        <ParticlesBg type="circle" bg={true} />
+        </>
     )
 }
 export default Search;
