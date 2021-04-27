@@ -1,9 +1,16 @@
 import React from "react";
 import API from "../../utils/API.js";
 
+
+
+// Still working on this 
 function saveToDatabase(event) {
   API.saveBook({
-     
+    //  title: props.books.volumeInfo.title,
+    //  authors: props.books.volumeInfo.authors,
+    //  image: props.books.volumeInfo.imageLinks.thumbnail,
+    //  description: props.books.volumeInfo.description,
+    //  link: props.books.volumeInfo.infoLink
   }) 
   
 }

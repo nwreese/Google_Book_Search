@@ -3,7 +3,10 @@ import { Link, useParams } from "react-router-dom";
 import { Col, Row, Container } from "../components/Grid";
 import Jumbotron from "../components/Jumbotron";
 import API from "../utils/API";
-
+import Search from "../pages/search";
+import Result from "../components/Result";
+// import Book from "../models/book";
+// Still working on this page
 function Saved(props) {
   const [book, setBook] = useState({})
 
@@ -15,6 +18,7 @@ function Saved(props) {
   }, [])
 
   return (
+
       <Container fluid>
         <Row>
           <Col size="md-12">

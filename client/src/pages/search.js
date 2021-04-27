@@ -28,12 +28,7 @@ function Search () {
         })
     };
 
-    function saveToDatabase(event) {
-       API.saveBook({
-          
-       }) 
-       
-    }
+    
 
     return (
         <>

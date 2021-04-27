@@ -2,21 +2,21 @@ import React from "react";
 import {Link} from "react-router-dom";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
-
+import Jumbotron from "../Jumbotron";
+// Still working on this
 function NavSearch() {
   return (
-    <>
-    <Navbar bg="dark" variant="dark">
-    <Navbar.Brand href="#home">Navbar</Navbar.Brand>
-    <Nav className="mr-auto">
-    </Nav>
-  </Navbar>
-     {/* <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
+    
+     <Nav className="navbar navbar-expand-lg navbar-dark bg-primary">
       <a className="navbar-brand" href="/">
        Google Book Search 
       </a>
-     </nav> */}
-    </>
+      <br/>
+      <a className="navbar-brand" href="/saved">
+       Saved Books 
+      </a>
+     </Nav>
+     
   );
 }
 
