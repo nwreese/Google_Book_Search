@@ -26,7 +26,15 @@ function Search () {
         .then(data => {
             setBookResults(data.items)
         })
+    };
+
+    function saveToDatabase(event) {
+       API.saveBook({
+          
+       }) 
+       
     }
+
     return (
         <>
         <div>
@@ -39,8 +47,10 @@ function Search () {
                 <h1>These are your results</h1>
                 <div>
             {
+                
                 bookResults.map( book => {
-                    return(<Result book={book}/>)
+                    return( 
+                    <Result book={book}/>)
                 })
             }
                 </div>
@@ -48,6 +58,7 @@ function Search () {
         </div>
         <ParticlesBg type="circle" bg={true} />
         </>
+
     )
 }
 export default Search;

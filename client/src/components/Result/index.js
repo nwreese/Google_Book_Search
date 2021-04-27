@@ -1,10 +1,13 @@
 import React from "react";
+import API from "../../utils/API.js";
 
+function saveToDatabase(event) {
+  API.saveBook({
+     
+  }) 
+  
+}
 
-// import "./style.css";
-
-// The ...props means, spread all of the passed props onto this element
-// That way we don't have to define them all individually
 function Result(props) {
   return (
   <div>
@@ -13,6 +16,9 @@ function Result(props) {
       <img src={props.book.volumeInfo.imageLinks.thumbnail}></img>
       <h3>{props.book.volumeInfo.description}</h3>
       <a href={props.book.volumeInfo.infoLink}>Book Link</a>
+     <form>
+     <button onClick={(event) => {saveToDatabase(event)}}> Favorite! </button>
+     </form>
   </div>
   );
 }
